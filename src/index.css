@@ -66,6 +66,103 @@ body {
     var(--color-farm-50);
 }
 
+/* —— Emerald public pages (home / auth) —— */
+.page-emerald {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(52, 211, 153, 0.12), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(16, 185, 129, 0.08), transparent 50%),
+    linear-gradient(180deg, #ecfdf5 0%, #f0fdf4 35%, #fff 100%);
+}
+
+.auth-hero-panel {
+  background:
+    radial-gradient(ellipse 70% 50% at 10% 10%, rgba(52, 211, 153, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 90% 90%, rgba(6, 95, 70, 0.4), transparent 50%),
+    linear-gradient(165deg, #021810 0%, #064e3b 45%, #0a3d21 100%);
+}
+
+.auth-hero-glow {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(52, 211, 153, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.6;
+}
+
+.auth-form-panel {
+  background: linear-gradient(180deg, #ecfdf5 0%, #f7fef9 40%, #ffffff 100%);
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.8) inset,
+    0 20px 50px rgba(6, 78, 59, 0.1);
+}
+
+.auth-feature-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+.emerald-badge {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(110, 231, 183, 0.35);
+  color: #a7f3d0;
+}
+
+.btn-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.95);
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.btn-home-link:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(110, 231, 183, 0.4);
+  transform: translateY(-1px);
+}
+
+.auth-sidebar-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(6, 78, 59, 0.06);
+}
+
+.home-hero-emerald {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(52, 211, 153, 0.2), transparent 60%),
+    linear-gradient(165deg, #021810 0%, #064e3b 40%, #0a3d21 100%);
+}
+
+.home-stat-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(110, 231, 183, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.emerald-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(236, 253, 245, 0.9));
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  box-shadow: 0 12px 32px rgba(6, 78, 59, 0.08);
+}
+
+.auth-footer {
+  background: rgba(236, 253, 245, 0.6);
+}
+
 .page-content-enter {
   animation: page-enter 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
